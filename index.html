@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <body>
-    <div> id="game">
-      <div> id="dodger" style=bottom</div>
-      <div>
-        <script taype="text/javascript" src="index.js"></script>
-      </div>
-  </body>
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "ArrowLeft") {
-      const leftNumbers = dodger.style.left.replace("px", "");
-      const left = parseInt(leftNumbers, 10);
-  
-      dodger.style.left = `${left - 1}px`;
-    }
-  });
+<body>
+  global.expect = require("expect");
+
+const babel = require("babel-core");
+const jsdom = require("jsdom");
+const path = require("path");
+</body>
 </head>
 <body>
-  const dodger=document.getElementById("dodger");
-  dodger.style.backgroundColor = "#000000";
-  dodger.style.backgroundColor = "#FF69B4";
-  dodger.style.bottom = "100px";
+  describe("shout(string)", function () {
+    // there's stuff in here, too
+  });
 </body>
 </html>
